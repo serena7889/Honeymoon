@@ -9,8 +9,16 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    
     var body: some View {
-        Text("Hello, World!")
+        VStack {
+            HeaderView()
+            Spacer()
+            CardView(destination: destinationData[0])
+            Spacer()
+            HeaderView()
+        }
     }
 }
 
